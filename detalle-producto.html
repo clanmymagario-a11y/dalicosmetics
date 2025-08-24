@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle Producto - Dali Cosmetics</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- ================================
+       NAVBAR DINÁMICO
+  ================================= -->
+  <header>
+    <!-- NAV PRINCIPAL SUPERIOR -->
+    <nav class="main-nav">
+      <div class="logo-container">
+        <img src="./assets/img/dmini.jpg" alt="Logo Dali Cosmetics" class="nav-logo">
+      </div>
+
+      <div class="nav-actions">
+        <a href="contacto.html" class="btn-contacto">Contáctanos</a>
+        <a href="perfil.html" class="btn-perfil">Mi Perfil</a>
+        <a href="carrito.html" class="btn-carrito">🛒 Carrito</a>
+      </div>
+    </nav>
+
+    <!-- SUBNAV DE FILTROS + CATEGORÍAS -->
+    <nav class="subnav categorias-nav">
+      <ul class="subnav-links">
+        <li><a href="index2.html" id="btn-catalogo">Catálogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================
+         DETALLE DEL PRODUCTO
+    ========================== -->
+    <section class="detalle-producto">
+      <div class="producto-info">
+
+        <!-- 🔹 Galería del producto -->
+        <div class="galeria-producto">
+          <!-- Imagen principal -->
+          <div class="imagen-principal-container">
+            <img id="producto-imagen" src="" alt="Imagen del Producto" class="imagen-principal">
+          </div>
+
+          <!-- Miniaturas -->
+          <div id="producto-thumbs" class="galeria-thumbs" aria-label="Más imágenes del producto" role="list">
+            <!-- Miniaturas dinámicas (se cargan con JS) -->
+          </div>
+        </div>
+
+        <!-- 🔹 Información del producto -->
+        <div class="descripcion">
+          <h2 id="producto-nombre">Nombre del Producto</h2>
+          <p id="producto-categoria">Categoría: <span></span></p>
+          <p id="producto-precio">Precio: $</p>
+          <p id="producto-descripcion">Descripción del producto</p>
+          <div class="acciones-carrito">
+            <label for="cantidad">Cantidad:</label>
+            <div class="stepper">
+              <button class="step-btn" id="decrement">−</button>
+              <input type="text" id="cantidad" value="1" readonly>
+              <button class="step-btn" id="increment">+</button>
+            </div>
+            <button class="btn agregar">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PRODUCTOS RECOMENDADOS
+    ========================== -->
+    <section class="recomendados">
+      <h2>Productos Recomendados</h2>
+      <div class="carousel">
+        
+        <!-- Botón anterior -->
+        <button id="prev" class="carousel-btn prev">
+          <!-- 🔽 Placeholder del icono izquierdo -->
+          <span class="icon-left">⟨</span>
+        </button>
+    
+        <div class="carousel-window">
+          <div id="carousel-track" class="carousel-track"></div>
+        </div>
+    
+        <!-- Botón siguiente -->
+        <button id="next" class="carousel-btn next">
+          <!-- 🔽 Placeholder del icono derecho -->
+          <span class="icon-right">⟩</span>
+        </button>
+    
+      </div>
+    </section>
+
+    <!-- =========================
+         MINI PESTAÑA EMERGENTE DEL CARRITO
+    ========================== -->
+    <div id="carrito-emergente" class="carrito-emergente" style="display: none;">
+      <p id="total-articulos">0 Artículos</p>
+      <a href="carrito.html" id="ver-carrito">Ver Carrito</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dali Cosmetics</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/detalle-producto.js"></script>
+
+<!-- 🔔 Modal de confirmación -->
+<div id="modal-carrito" class="modal">
+  <div class="modal-contenido">
+    <p>Producto agregado exitosamente 🎉</p>
+  </div>
+</div>
+
+<!-- 🛒 Carrito emergente abajo-derecha -->
+<div id="carrito-emergente" class="carrito-emergente">
+  <span id="total-articulos">0 Artículos</span>
+  <a href="carrito.html">Ir al carrito</a>
+</div>
+</div>
+</body>
+</html>

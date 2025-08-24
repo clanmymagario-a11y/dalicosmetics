@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - Dali Cosmetics</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Dali Cosmetics</h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="carrito">
+    <h2>Tu Carrito 🛍️</h2>
+    <section id="lista-carrito"></section>
+    <p id="total"></p>
+
+    <!-- Botones de acción -->
+    <div class="acciones-carrito">
+      <button id="continuar">Seguir comprando</button>
+      <button id="factura">Generar factura</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dali Cosmetics</p>
+  </footer>
+  <script src="js/carrito.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

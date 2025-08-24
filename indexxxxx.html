@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dali Cosmetics - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <!-- NAV PRINCIPAL SUPERIOR -->
+    <nav class="main-nav">
+      <div class="logo-container">
+        <img src="./assets/img/dmini.jpg" alt="Logo Dali Cosmetics" class="nav-logo">
+      </div>
+      <!-- TITULO OCULTO <h1 class="brand-title">Dali Cosmetics</h1> -->
+
+      <!-- Botones a la derecha -->
+      <div class="nav-actions">
+        <a href="contacto.html" class="btn-contacto">Contáctanos</a>
+        <a href="perfil.html" class="btn-perfil">Mi Perfil</a>
+        <a href="carrito.html" class="btn-carrito">
+          🛒 <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- SUBNAV DE FILTROS DE CATÁLOGO -->
+    <nav class="subnav">
+      <ul class="subnav-links">
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="#">DaliBox</a></li>
+        <li><a href="#">Labios</a></li>
+        <li><a href="#">Ojos</a></li>
+        <li><a href="#">Rostro</a></li>
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Promociones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero con slider -->
+    <section class="hero">
+      <h2>Bienvenido/a a Dali Cosmetics</h2>
+      <p>Descubre nuestra colección de maquillaje y cuidado personal</p>
+
+      <!-- Slider -->
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="./assets/img/logodali.jfif" alt="Maquillaje 1"></div>
+          <div class="slide"><img src="./assets/img/envios.png" alt="Maquillaje 2"></div>
+          <div class="slide"><img src="./assets/img/seguros.jfif" alt="Maquillaje 3"></div>
+        </div>
+        <!-- Controles -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dali Cosmetics</p>
+  </footer>
+
+  <script src="js/slider.js"></script>
+</body>
+</html>

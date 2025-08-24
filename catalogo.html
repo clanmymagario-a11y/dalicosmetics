@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dali Cosmetics - Catálogo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Dali Cosmetics</h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalogo">
+  
+    <!-- Menú de categorías estilo navbar -->
+    <nav class="categorias-nav">
+      <ul id="categorias">
+        <li data-categoria="todos" class="activo">Todos</li>
+        <li data-categoria="Labios">Labios</li>
+        <li data-categoria="Ojos">Ojos</li>
+        <li data-categoria="Rostro">Rostro</li>
+        <li data-categoria="Skincare">Skincare</li>
+      </ul>
+    </nav>
+  
+    <!-- Buscador y filtros simples -->
+    <section class="barra-filtros">
+      <input type="text" id="buscador" placeholder="Buscar producto...">
+      <select id="orden-precio">
+        <option value="">Ordenar por...</option>
+        <option value="asc">Precio: menor a mayor</option>
+        <option value="desc">Precio: mayor a menor</option>
+      </select>
+    </section>
+    <!-- Mini pestaña emergente -->
+      <div id="carrito-emergente" class="carrito-emergente" style="display: none;">
+        <p id="total-articulos">0 Artículos</p>
+        <a href="carrito.html" id="ver-carrito">Ver Carrito</a>
+      </div>
+  
+    <!-- Lista de productos -->
+    <section class="lista-productos grid" id="lista-productos"></section>
+    
+  
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dali Cosmetics</p>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
